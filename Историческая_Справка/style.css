@@ -1,0 +1,92 @@
+body{
+    background-image: url(./img/phon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+header{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height:120px;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: Russo One,sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
+}
+.text{
+    font-family: Russo One,sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 1%;
+    min-height: 16vh;
+    font-weight: bolder;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+}
+.home {
+    color: rgb(148 163 184/var(--tw-text-opacity));
+    margin: 1.3% .5% .5%;
+    position: absolute;
+    left: 0%;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    width: 5rem;
+    z-index: 100;
+}
+.container{
+    margin-top: -5%;
+    margin: auto;
+    width: 70%;
+    flex-direction: column  ;  
+}
+.block-btn{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 2%;
+    font-family: Russo One,sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    border: 1px solid wheat;
+    transition: 0.4s all;
+}
+.block-btn:hover{
+    transform: scale(1.05);
+    color: brown;
+}
+a{
+    text-decoration: none;
+}
+@media only screen and (max-width : 480px) {
+    .home{
+        width: 10%;
+    }
+    .text{
+        font-size: 20px;
+    }
+    header{
+        height: 70px;
+    }
+    .block-btn{
+        margin-top: 10px;
+        font-size: 24px;
+    }
+}
+

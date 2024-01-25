@@ -1,0 +1,123 @@
+body{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100vh;
+}
+header{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height:150px;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: Russo One,sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
+}
+.text{
+    font-family: Russo One,sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 1%;
+    min-height: 16vh;
+    font-weight: bolder;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+}
+.home {
+    color: rgb(148 163 184/var(--tw-text-opacity));
+    margin: 1.3% .5% .5%;
+    position: absolute;
+    left: 0%;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    width: 5rem;
+    z-index: 100;
+}
+.container{
+    margin: auto;
+    width: 70%;
+    height: 950px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 3%;
+    border-radius: 20px;
+}
+img{
+    margin-left: 40%;
+    margin-top: 2%;
+}
+hr{
+    width: 70%;
+    margin-top: 1%;
+}
+.image{
+    margin-left: 16%;
+    border-radius: 20px;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 5%; 
+    width: 80%;
+    text-indent: 50px;
+    margin: auto;
+
+}
+button{
+    width: 20%;
+    height: 60px;
+    border-radius: 10px;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 4%;
+    margin-left: 10%;
+    font-family: Russo One,sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid wheat;
+    transition: 0.4s all;
+}
+button:hover{
+    transform: scale(1.05);
+    color: brown;
+}
+@media only screen and (max-width : 480px) {
+    .home{
+        width: 10%;
+    }
+    .text{
+        font-size: 25px;
+    }
+    .container{
+        width: 100%;
+    }
+    .zvezda{
+        margin-left: 30%;
+    }
+    .image{
+        margin-left: 5%;
+        width: 90%;
+    }
+    button{
+        font-size: 15px;
+    }
+}

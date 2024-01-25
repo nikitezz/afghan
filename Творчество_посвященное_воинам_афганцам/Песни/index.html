@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/star.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Песни</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="../index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="home"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path></svg>
+            </a>
+            <div class="text">
+                Песни
+                </div>
+        </header>
+        <div class="block-scroll">
+            &#10148;
+        </div>
+        <div class="container">
+            <img src="./img/звезда.png" alt="" class="img">
+            <p>Военная песня в Афганистане не ограничивалась территориями. Она мгновенно распространялась по всему ограниченному контингенту— лётчиками, которые постоянно перелетали из провинции в провинцию, уезжающими в отпуск офицерами, увольняющимися в запас солдатами. Главным, в афганской песне была «сословноопознавательная функция»— песня быстро помогала определить «свой» или «чужой».</p>
+            <video controls="controls">
+                <source src="./img/ПЕСНЯ ПРО АФГАН ДО СЛЕЗ! Посвящается всем погибшим, ребятам в Афганской войне 1979-1989.mp4">
+            </video>
+            <br>
+            <video controls="controls">
+                <source src="./img/Розенбаум с кино.mp4">
+            </video>
+            <br>
+            <div class="block-link">
+                <a href="http://afgan.vlib.by/index.php/tvorchestvo-voinov-afgantsev/171-tvorchestvo-voinov-afgantsev/1884-m-tarasov-stikhi-i-pesni-napisannye-v-period-sluzhby-v-afganistane"> Тарасов Михаил. Стихи и песни, написанные в период службы в Афганистане</a>
+                <br>
+                <br>
+                <a href="http://afgan.vlib.by/index.php/tvorchestvo-voinov-afgantsev/171-tvorchestvo-voinov-afgantsev/2064-salyga-vasilij-pesni-vojny">Салыга Василий</a>
+            </div>
+            <iframe width="60%" height="400" style="margin-left: 20%; margin-top:5%;" src="https://www.youtube.com/embed/e8TPBtUurio" title="ПЕСНЯ ЗА ДУШУ БЕРЁТ!👍 ПАМЯТЬ - Олег Гонцов. Памяти Всех воинов-интернационалистов посвящается…" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            <br>
+            <iframe width="60%" height="400" style="margin-left: 20%; margin-top:5%;" src="https://www.youtube.com/embed/vGdiJjY4mDQ" title="Афганские песни | группа Каскад | По дорогам Афгана | Мы воевали в Афганистане" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        const scrollHome = document.querySelector('.block-scroll');
+function scrollHomeFt(){
+    window.scrollTo({
+        top: 0,
+        left:0,
+        behavior: "smooth"
+    });
+}
+scrollHome.addEventListener('click',scrollHomeFt);
+
+    </script>
+</body>
+</html>

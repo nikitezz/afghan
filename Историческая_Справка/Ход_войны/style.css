@@ -1,0 +1,140 @@
+body{
+    background-image: url(./img/phon.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100vh;
+}
+header{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height:120px;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: Russo One,sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.7);
+}
+k{
+    text-decoration: underline;
+}
+.text{
+    font-family: Russo One,sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 1%;
+    min-height: 16vh;
+    font-weight: bolder;
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+}
+.home {
+    color: rgb(148 163 184/var(--tw-text-opacity));
+    margin: 1.3% .5% .5%;
+    position: absolute;
+    left: 0%;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    width: 5rem;
+    z-index: 100;
+}
+.container{
+    margin: auto;
+    width: 70%;
+    height: 21000px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 2%;
+    border-radius: 20px;
+}
+.block-scroll{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 100%;
+    position: fixed;
+    margin-top: 45%;
+    transform: rotate(270deg);
+    margin-left: 92%;
+
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+hr{
+    width: 70%;
+    margin-top: 2%;
+}
+.img-hod{
+    width: 600px;
+    height: 350px;
+    margin-left: 20%;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+.text-decoration{
+    color: white;
+    font-size: 27px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 80%;
+    text-decoration:underline;
+    text-indent: 50px;
+}
+p{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    margin-left: 10%;
+    margin: auto; 
+    width: 80%;
+    text-indent: 50px;
+}
+img{
+    width: 400px;
+    height: 320px;
+    padding: 10px 15px 10px;
+}
+strong{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    margin-left: 10%;
+    margin: auto; 
+    width: 80%;
+    margin-left: 50px;
+}
+@media only screen and (max-width : 480px) {
+    .home{
+        width: 10%;
+    }
+    .container{
+        width: 100%;
+        height: 50000px;
+    }
+    .block-scroll{
+        display: none;
+    }
+    .img-hod{
+        width: 90%;
+        height: 300px;
+        margin-left: 0%;
+    }
+}

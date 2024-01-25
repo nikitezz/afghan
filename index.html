@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/star.png" type="image/x-icon">
+    <title>АФГАНИСТАН. ЖИВИ В НАШЕЙ ПАМЯТИ</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block-title">
+            "Учреждение образование"
+            <br>
+            "Гомельский государственный аграрно-экономический колледж"
+            <div id="example" class="exampl flex">
+                <span class="span1">АФГАНИСТАН.</span><br>
+                <br>
+                <br>
+                <span class="span2">ЖИВИ В НАШЕЙ ПАМЯТИ</span>
+            </div>
+            <a href="./СтраницаПерехода/index.html">
+                <img src="./img/star.png" alt="" class="star">
+                <br>
+                <div class="text-hint">Нажмите для продолжения</div>
+            </a>
+            <!-- <div class="block-audioGid">
+                <img src="./img/audioGid.png" alt="" class="img_audioGid">
+                <div class="block-text-audioGid">
+                    Онлайн
+                    Экскурсия
+                </div>
+            </div> -->
+        </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script>
+        alert("Сайт рекомендуется ипользовать в браузере Google Chrome!");
+        $(document).ready(function(){
+ $.fn.animate_Text = function() {
+  var string = this.text();
+  return this.each(function(){
+   var $this = $(this);
+   $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+   $this.find('span.new').each(function(i, el){
+    setTimeout(function(){ $(el).addClass('div_opacity'); }, 20 * i);
+   });
+  });
+ };
+ $('#example').show();
+ $('#example').animate_Text();
+});
+    </script>
+</body>
+</html>

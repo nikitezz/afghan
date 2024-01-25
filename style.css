@@ -1,0 +1,91 @@
+body{
+    background-image: url(./img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    font-family: Russo One,sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+.block-title{
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219/var(--tw-text-opacity));
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px #000;
+    font-weight: bold;
+}
+
+#example .new { opacity: 0; }
+#example .div_opacity {
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+}
+.exampl{
+    --tw-text-opacity: 1;
+    font-size: 4.3rem;
+    font-weight: 700;
+    margin-top: 10%;
+    text-shadow: 5px 5px 5px #000;
+    color: #990000;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 1%;
+    width: 750px;
+    font-weight: 900;
+}
+.star{
+    width: 130px;
+    height: 130px;
+    margin-top: 10%;
+    cursor: pointer;
+    transition: 2s all;
+}
+.star:hover{
+    transform: rotate(360deg);
+}
+a{
+    text-decoration: none;
+    color: rgb(209 213 219/var(--tw-text-opacity));
+}
+.img_audioGid{
+    width: 100px;
+    height:100px;
+}
+.block-audioGid{
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;    
+    margin-left: 100%;
+    margin-top: -15%;
+}
+@media only screen and (max-width : 480px) {
+   .block-title{
+    width: 75%;
+    font-size: 20px;
+    margin: auto;
+   }
+   .exampl{
+    position: absolute;
+    font-size: 35px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-top: 10%;
+   }
+   .star{
+    margin-top: 100%;
+   }
+  
+
+}

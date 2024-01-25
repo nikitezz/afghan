@@ -1,0 +1,116 @@
+body{
+    background-image: url(./Img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.text-group{
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background:  linear-gradient(rgba(0,0,0,0.1),rgb(161, 136, 136));
+    opacity: 0.9;
+    border-radius: 10px;
+    /* color:#fff; */
+    color: black;
+    padding: 5px 5px 5px;
+    text-align: right;
+    width: 500px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 55%;
+    margin-top: 4%;
+    font-family: 'Courier New', Courier, monospace;
+    /* background-color: rgba(0, 0, 0, 0.8);
+    /* text-shadow: 2px 2px 5px red; */
+    /* padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    color: white; */ 
+}
+iframe{
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    border-radius: 5%;
+}
+.block-txt{
+    padding: 10px 10px ;
+    text-align: justify;
+    position: absolute;
+    width: 1000px;
+    left: 5%;
+    top: 60%;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background:  linear-gradient(rgba(0,0,0,0.1),rgb(161, 136, 136));
+    border-radius: 10px;
+}
+.star{
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+    transition: 2s all;
+
+}
+.star:hover{
+    transform: rotate(360deg);
+}
+a{
+    text-decoration: none;
+    color: rgb(209 213 219/var(--tw-text-opacity));
+}
+
+.block-star{
+    position: absolute;
+    top: 60px;
+    /* left: 100%; */
+
+    right: -20%;
+}
+.text-hint{
+    width: 140px;    text-align: center;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Russo One, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #bdbdbd;
+    transition-duration: 0.15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    text-shadow: 3px 3px 0 #123;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: -85px;
+}
+@media only screen and (max-width : 480px) {
+    iframe{
+        width: 90%;
+        height: 190px;
+        margin: auto;
+        margin-top: -250px;
+    }
+    .text-group{
+        position: absolute;
+        width: 90%;
+        height: 490px;
+        text-align: justify;
+        margin-top: 350px;
+        margin-left: 0%;
+    }
+    .block-txt{
+        position: absolute;
+        width: 95%;
+        height: 950px;
+        text-align: justify;
+        margin-top: 300px;
+        margin-left: -5%;
+    }
+    .block-star{
+        margin: auto;
+        margin-top: 720px;
+        margin-right: 50%;
+    }
+}
