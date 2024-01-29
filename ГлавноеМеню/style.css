@@ -45,6 +45,9 @@ header{
     width: 90%;
     margin-top: 2%;
 }
+.container-mobail{
+    display: none;
+}
 img{
     height: auto;
     max-width: 100%;
@@ -113,56 +116,42 @@ footer{
 @media only screen and (max-width : 480px) {
     header{
         height: 155px;
+        width: 100%;
     }
     .text{
         font-size: 25px;
     }
     .container{
-        display: grid;
-        gap: 2%;
-        grid-template-columns: 100%;
-        margin: auto;
-        width: 50%;
-        margin-top: 2%;
+        display: none;
     }
-    .menu__item{
-        width: 80%;
-        margin: auto;
+    .container-mobail{
+        display: block;
     }
-    span{
-        font-size: 15px;
-    }
-    .c1{
-        margin-left:-10%;
-    }
-    .c2{
-        margin-left: -45%;
-        margin-top: -30%;
-    }
-    .c3{
-        margin-left: 50%;
-        margin-top: -85%;
-    }
-    .c4{
-        margin-left:-60%;
-        margin-top: -25%;
-    }
-    .c5{
+    .block-btn{
+        width: 90%;
+        height: 50px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-top: 5%;
         margin-left: 5%;
-        margin-top: -120%;
+        font-family: Russo One,sans-serif;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bolder;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+        border: 1px solid wheat;
+        transition: 0.4s all;
     }
-    .c6{
-        margin-left: 50%;
-        margin-top: -125%;
+    .block-btn:hover{
+        transform: scale(1.05);
+        color: brown;
     }
-    .c7{
-        margin-left: -45%;
-        margin-top: -70%;
+    a{
+        text-decoration: none;
     }
-    .c8{
-        margin-left: 50%;
-        margin-top: -80%;
-    }
+    
     .link__block{
         margin-top: 5%;
     }
